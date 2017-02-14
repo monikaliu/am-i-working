@@ -13,11 +13,20 @@
 	   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
 	</svg>
 
+	<h1 class="hide answer">No, not yet!</h1>
+
 	<script>
 		function checkActivity(btn) {
 			btn.className += 'hide';
 			var spinner = document.getElementsByClassName("spinner")[0];
 			spinner.className.baseVal = spinner.className.baseVal.replace('hide','show');
+			setTimeout(function(){showResult(spinner);}, 1500);
+		}
+
+		function showResult(spinner){
+			spinner.className.baseVal = spinner.className.baseVal.replace('show','hide');
+			var answer = document.getElementsByClassName("answer")[0];
+			answer.className = answer.className.replace('hide','show'); 
 		}
 	</script>
 </body>
