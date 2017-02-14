@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Is Monika Working?</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
@@ -15,19 +16,6 @@
 
 	<h1 class="hide answer">No, not yet!</h1>
 
-	<script>
-		function checkActivity(btn) {
-			btn.className += 'hide';
-			var spinner = document.getElementsByClassName("spinner")[0];
-			spinner.className.baseVal = spinner.className.baseVal.replace('hide','show');
-			setTimeout(function(){showResult(spinner);}, 1500);
-		}
-
-		function showResult(spinner){
-			spinner.className.baseVal = spinner.className.baseVal.replace('show','hide');
-			var answer = document.getElementsByClassName("answer")[0];
-			answer.className = answer.className.replace('hide','show'); 
-		}
-	</script>
+	<script type="text/javascript" src="work.js"></script>
 </body>
 </html>
