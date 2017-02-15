@@ -1,5 +1,5 @@
 (function() {
-	document.getElementsByClassName("button_check")[0].addEventListener("click", checkActivity, false);
+	document.querySelector(".button_check").addEventListener("click", checkActivity, false);
 
 	function checkActivity() {
 		hideElement(document.querySelector(".button_check"));
