@@ -13,7 +13,6 @@
 	}
 
 	function hideElement(element) {
-		element.classList.remove("show");
 		element.classList.add("hide"); 
 	}
 

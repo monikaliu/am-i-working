@@ -12,44 +12,35 @@ html, body {
 	padding-top: 100px;
 }
 
-h1 {
+.question {
+	margin-top: 0.67em;	
+}
+
+.text {
 	text-align: center;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
 	color: #333;
+	font-size: 2em;
+	margin-bottom: 0.67em;
 }
 
 .button_check {
 	border: none;
 	border-radius: 2px;
-	display: inline-block;
 	height: 36px;
 	line-height: 36px;
 	padding: 0 2rem;
 	text-transform: uppercase;
-	
-	outline: 0;
-
-	text-decoration: none;
 	color: #fff;
 	background-color: #26a69a;
-	text-align: center;
 	letter-spacing: .5px;
 	cursor: pointer;
 	font-weight: bold;
-
-	position: relative;
-	overflow: hidden;
-	vertical-align: middle;
-	z-index: 1;
 }
 
 .hide {
 	display: none;
-}
-
-.show {
-	display: block;
 }
 
 .spinner {
