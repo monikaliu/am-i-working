@@ -1,12 +1,23 @@
-function checkActivity(btn) {
-	btn.className += 'hide';
-	var spinner = document.getElementsByClassName("spinner")[0];
-	spinner.className.baseVal = spinner.className.baseVal.replace('hide','show');
-	setTimeout(function(){showResult(spinner);}, 1500);
+document.getElementsByClassName("btn")[0].addEventListener("click", checkActivity, false);
+
+function checkActivity() {
+	hideElement(document.querySelector(".btn"));
+	showElement(document.querySelector(".spinner"));
+	setTimeout(showResult, 1500);
 }
 
-function showResult(spinner){
-	spinner.className.baseVal = spinner.className.baseVal.replace('show','hide');
-	var answer = document.getElementsByClassName("answer")[0];
-	answer.className = answer.className.replace('hide','show'); 
+function showResult(){
+	hideElement(document.querySelector(".spinner"));
+	showElement(document.querySelector(".answer"));
 }
+
+function hideElement(el) {
+	el.classList.remove("show");
+	el.classList.add("hide"); 
+}
+
+function showElement(el) {
+	el.classList.remove("hide");
+	el.classList.add("show"); 
+}
+
