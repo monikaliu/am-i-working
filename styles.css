@@ -95,7 +95,6 @@ html, body {
 }
 
 .draw_this {
-	padding-left: 35%;
     fill-opacity: 0;
     stroke: #000;
     stroke-width: 3;
