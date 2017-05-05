@@ -93,3 +93,20 @@ html, body {
 		transform: rotate(450deg);
 	}
 }
+
+.draw_this {
+	padding-left: 35%;
+    fill-opacity: 0;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: draw 10s infinite linear;
+  }
+
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
